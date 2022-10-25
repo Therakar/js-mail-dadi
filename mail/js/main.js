@@ -5,19 +5,17 @@ const listEmail = ["Pino@gmail.com", "Gino@gmail.com", "Tino@gmail.com", "Lino@g
 // prompt per inserire la mail
 const newElement = prompt ("inserisci l'email:");
 
+let trovato = false;
 // ciclo for
 for(let i = 0; i < listEmail.length; i++){
     let name = listEmail[i];
 
     // se uno degli elementi è uguale a newElement ...
     if (name == newElement){
-        alert("Email già presente!");
-        console.log(listEmail[i]);
+        trovato = true;
     }
     // altrimenti ...
     else{
-        alert("Email disponibile!"); 
-        listEmail.push(newElement);
-        console.log(listEmail[i]);
+        
     }
 }
